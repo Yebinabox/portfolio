@@ -1,0 +1,388 @@
+/* Jeff Fung | Yebinabox */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+/* Global */
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  background: #eee;
+}
+
+.pages{
+  padding: 1rem;
+  max-width: 100%;
+}
+
+h1{
+  font-weight: 800;
+  font-size:calc(2rem + 1vw);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2{
+  color: #000;
+}
+
+h3{
+  color: #888;
+}
+
+h4{
+  color: #888;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+main{
+  padding: 0 2rem;
+  margin-left: 150px;
+}
+
+.header{
+  text-align: left;
+  width: 100%;
+}
+
+.caption{
+  padding: 0.8rem;
+  text-align: left;
+}
+
+i{
+  color: #495057;
+}
+
+/* Nav Menu */
+
+.main-nav{
+  display: flex;
+  position: fixed;
+  width: 150px;
+  margin-left: 1rem;
+  overflow: hidden;
+  height: 100vh;
+  max-heigh: 100vh;
+  align-items: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+
+#nav{
+  width: 9rem;
+  padding: 1rem 1rem 1rem 0;
+  border-right: double;
+}
+
+ul li{
+  padding: 5px 0;
+}
+
+ul li a{
+  color: #000;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.active{
+  color: #f38a8a;
+  font-size: 1.5rem;
+}
+
+.slide-nav{
+    display: none;
+    padding: 0.25rem 1rem;
+}
+
+.nav{
+  font-weight: 800;
+}
+
+.nav2{
+    display: none;
+    float: none;
+    text-align: right;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#drop-icon{
+  font-size:calc(2rem + 2vw);
+  cursor: pointer;
+  text-shadow: 0px 0px 5px #FFFFFF;
+}
+
+#drop-icon2{
+  font-size:calc(2rem + 2vw);
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-nav{
+    display: none;
+    width: 0;
+    margin-left: 0;
+    overflow: hidden;
+  }
+  main{
+    min-width: 0px;
+    padding: 0.25rem;
+    margin: auto;
+  }
+  .header{
+    padding: 0;
+    text-align: left;
+  }
+
+  .caption{
+    padding: 0;
+    text-align: left;
+  }
+
+  .slide-nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    float: none;
+    display: block;
+    text-align: right;
+    transition: all 0.5s;
+  }
+
+  .nav2{
+    padding-right: 0.5rem;
+    font-weight: 800;
+    color: #fff;
+    transition: all 0.5s;
+  }
+
+  ul li a{
+    color: #000;
+    font-weight: 400;
+    font-size: 7vw;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .active{
+    color: #f38a8a;
+    font-size: 7vw;
+  }
+}
+
+/* Home Section */
+
+#home{
+  min-height: 100vh;
+}
+
+#home-text{
+  text-align: left;
+  font-size:calc(1rem + 1vw);
+}
+
+/* About Section */
+
+.a-box{
+  display: flex;
+  min-height: 800px;
+  height: 90vh;
+  align-items: center;
+}
+
+#a-picture{
+  display: flex;
+  flex: 0 1 50vw;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#a-picture-inner{
+  padding: 0 1rem 0 10vw;
+  width: 100%;
+}
+
+#a-text{
+  display: flex;
+  flex: 0 1 50vw;
+  height: 50vh;
+  align-items: center;
+}
+
+#a-text-inner{
+  padding: 1rem;
+}
+
+.a-t-c{
+  padding: 1rem 0 0 0;
+}
+
+@media (max-width: 700px) {
+  .a-box{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #a-picture-inner{
+    padding: 0 1rem 0 1rem;
+    height: 100%;
+    align-items: center;
+  }
+
+  #myself{
+    height: 100%;
+    width: auto;
+  }
+
+  #a-text{
+    align-items: flex-start;
+    height: 100%;
+  }
+
+}
+
+/* Gallery Section */
+
+.gallery{
+  -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 10px; /* Firefox */
+  column-gap: 10px;
+}
+
+.cards{
+  padding-top: 10px;
+  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+  page-break-inside: avoid; /* Firefox */
+  break-inside: avoid; /* IE 10+ */
+}
+
+@media (min-width: 450px) {
+  .gallery{
+     column-count: 2;
+  }
+}
+
+@media (min-width: 800px) {
+  .gallery{
+     column-count: 3;
+  }
+}
+
+@media (min-width: 1300px) {
+  .gallery{
+     column-count: 4;
+  }
+}
+
+/* Miscellaneous Section */
+
+/* Contact Section */
+
+#contact{
+  min-height: 900px;
+}
+
+.contact-icons{
+  font-size: 3rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 7rem 0 4rem 0;
+}
+
+.email{
+  width: 100%;
+  text-align: center;
+}
+
+#email{
+  font-size:calc(1.25rem + 2vw);
+  display: inline-block;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #00ffff;
+  color: #000;
+}
+
+.contact-text{
+  font-size: 1.5rem;
+  padding: 4rem 0 0 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.social-media-icons{
+  padding: 5rem 8rem 5rem 8rem;
+  text-decoration: none;
+  font-size: 3rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.sm-links{
+  width: inherit;
+  height: inherit;
+}
+
+.sm-text{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #888;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-decoration-color: #00ffff;
+}
+
+@media (max-width: 1000px) {
+  .social-media-icons{
+     grid-template-columns: repeat(3, 1fr);
+     padding: 5rem 2rem 0 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .social-media-icons{
+     grid-template-columns: repeat(2, 1fr);
+     padding: 5rem 0 0 0;
+  }
+}
+
+/* Footer */
+
+footer{
+  font-size: 1rem;
+  text-align: left;
+  padding: 1rem 1rem;
+  margin: auto;
+}
+
+/* Jeff Fung | Yebinabox */

@@ -1,0 +1,206 @@
+<!-- Jeff Fung | Yebinabox -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" centent="width=device-width">
+    <meta name="author" content="Jeff Fung">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/hometext.js"></script>
+    <script src="./js/lightbox.js"></script>
+    <title>Jeff Fung | Yebinabox</title>
+  </head>
+  <body>
+
+      <!-- Navigation -->
+      <div class="main-nav" id="main-nav">
+        <ul id="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#design">Design</a></li>
+          <li><a href="#gallery">gallery</a></li>
+          <!--  <li><a href="#miscellaneous">Miscellaneous</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Dropdown Navigation -->
+      <div class="slide-nav" id="slide-nav">
+        <ul>
+          <li class="dropdown">
+            <a id="drop-icon">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a id="drop-icon2">
+              <i class="fa fa-close"></i>
+            </a>
+            <ul class="nav2">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#design">Design</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <!-- <li><a href="#miscellaneous">Miscellaneous</a></li> -->
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    <!-- Content -->
+    <main>
+
+      <!-- Home Page -->
+      <div id="home" class="pages">
+        <p id="home-text">Hello, i'm Jeff and I create
+          <span class="home-text" data-period="2000" data-rotate='[ "Web Designs.", "Graphics.", "UI/UX Designs.", "Art." ]'></span>
+        </p>
+      </div>
+
+      <!-- About Page -->
+      <div id="about" class="pages">
+        <div class="header">
+          <h1>About</h1>
+          <h3></h3>
+        </div>
+        <div class="a-box">
+          <div id="a-picture">
+            <div id="a-picture-inner">
+              <img src="./images/roomagic.png" id="myself"></img>
+            </div>
+          </div>
+          <div id="a-text">
+            <div id="a-text-inner">
+              <h2 class="a-t-c">Hello! I'm Jeff, a Digital Designer from Vancouver, Canada.</h2>
+              <h3 class="a-t-c">I love creating graphics, be it logos, backgrounds, art, or overlays.</h3>
+              <h3 class="a-t-c">As a graduate from BCIT in the Digital Design and Development program, I have a decent background in UX, UI, creating Graphics, and Web Design, as well as some knowledge in coding. My work starts with prototyping and finalizes as a complete design.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Design Page -->
+      <div id="design" class="pages">
+        <div class="header">
+          <h1>Design</h1>
+          <h3></h3>
+        </div>
+        <img src="https://source.unsplash.com/1600x900/?nature,trees" alt="">
+        <div class="caption">
+          <h2> Project One </h2>
+          <h4>This line was intentionally left blank. You are currently reading some filler text. We aren't quite sure what to put here yet.</h4>
+        </div>
+      </div>
+
+      <!-- gallery Page -->
+      <div id="gallery" class="pages">
+        <div class="header">
+          <h1>Gallery</h1>
+        </div>
+
+        <!-- Need to think of a better way show this content. want to avoid php and wp. -->
+        <div class="gallery">
+          <wrapper>
+            <section class="cards">
+              <h3>This section is a gallery of Digital Paintings and Photoshop projects that I have been doing.</h3>
+            </section>
+            <section class="cards">
+              <a href="./images/gallery/g0001.jpg" data-lightbox="gallery" data-title="Digital Painting done with a little bit of Photoshop.">
+                <img class="gallery-image" src="./images/gallery/g0001.jpg"/>
+              </a>
+            </section>
+            <section class="cards">
+              <a href="./images/gallery/g0002.jpg" data-lightbox="gallery" data-title="Landscape Digital Painting.">
+                <img class="gallery-image" src="./images/gallery/g0002.jpg"/>
+              </a>
+            </section>
+            <section class="cards">
+              <a href="./images/gallery/g0003.jpg" data-lightbox="gallery" data-title="Image modified with Photoshop.">
+                <img class="gallery-image" src="./images/gallery/g0003.jpg"/>
+              </a>
+            </section>
+            <section class="cards">
+              <a href="./images/gallery/g0004.jpg" data-lightbox="gallery" data-title="Digital Painting of a girl.">
+                <img class="gallery-image" src="./images/gallery/g0004.jpg"/>
+              </a>
+            </section>
+            <section class="cards">
+              <a href="./images/gallery/g0005.jpg" data-lightbox="gallery" data-title="Letter Dispersion Photoshop.">
+                <img class="gallery-image" src="./images/gallery/g0005.jpg"/>
+              </a>
+            </section>
+            <section class="cards">
+              <a href="./images/gallery/g0006.jpg" data-lightbox="gallery" data-title="Digital Painting of a book cover. Made for a friend.">
+                <img class="gallery-image" src="./images/gallery/g0006.jpg"/>
+              </a>
+            </section>
+            <section class="cards">
+              <a href="./images/gallery/g0007.jpg" data-lightbox="gallery" data-title="Photoshop project made for BCIT Photoshop class.">
+                <img class="gallery-image" src="./images/gallery/g0007.jpg"/>
+              </a>
+            </section>
+            <section class="cards">
+              <a href="./images/gallery/g0008.jpg" data-lightbox="gallery" data-title="Digital Painting of shadow study.">
+                <img class="gallery-image" src="./images/gallery/g0008.jpg"/>
+              </a>
+            </section>
+            <section class="cards">
+              <a href="./images/gallery/g0009.jpg" data-lightbox="gallery" data-title="Photoshop project made for BCIT Photoshop class.">
+                <img class="gallery-image" src="./images/gallery/g0009.jpg"/>
+              </a>
+            </section>
+          </wrapper>
+        </div>
+      </div>
+
+      <!-- Miscellaneous Page
+
+      <div id="miscellaneous" class="pages">
+        <div class="header">
+          <h1>Miscellaneous</h1>
+          <h3></h3>
+        </div>
+        <img src="https://source.unsplash.com/1600x900/?nature,aniimals" alt="">
+        <div class="caption">
+          <h2> Project One </h2>
+          <h4>This line was intentionally left blank. You are currently reading some filler text. We aren't quite sure what to put here yet.</h4>
+        </div>
+      </div>
+
+      -->
+
+      <!-- Contact Page-->
+      <div id="contact" class="pages">
+        <div class="header">
+          <h1>Contact</h1>
+        </div>
+        <div class="contact-icons">
+          <a id="email" href="mailto:placeholder@gmail.com?Subject=Hello" target="_top"><i class="fa fa-envelope"></i></a>
+        </div>
+        <div class="email">
+          <a id="email" href="mailto:yebinabox@gmail.com?Subject=Hello" target="_top">yebinabox@gmail.com</a>
+        </div>
+        <h3 class="contact-text"> Feel free to send me an email if you have any questions or if you would like a copy of my resume!</h3>
+        <h3 class="contact-text"> You can also contact me via the following:</h3>
+        <div class="social-media-icons">
+          <div><a class="sm-links" href="https://www.linkedin.com/in/yebinabox/" target="_blank"><i class="fa fa-linkedin-square"><p class="sm-text">linkedin</P></i></a></div>
+          <div><a class="sm-links" href="https://www.facebook.com/Its.yeb" target="_blank"><i class="fa fa-facebook-square"><p class="sm-text">Facebook</p></i></a></div>
+          <div><a class="sm-links" href="https://www.instagram.com/its.yeb/" target="_blank"><i class="fa fa-instagram"><p class="sm-text">Instagram</p></i></a></div>
+          <div><a class="sm-links" href="https://twitter.com/yebinabox" target="_blank"><i class="fa fa-twitter-square"><p class="sm-text">Twitter</p></i></a></div>
+          <div><a class="sm-links" href="https://www.twitch.tv/yebinabox" target="_blank"><i class="fa fa-twitch"><p class="sm-text">Twitch</p></i></a></div>
+          <div><a class="sm-links" href="https://yebinabox.deviantart.com/" target="_blank"><i class="fa fa-deviantart"><p class="sm-text">Deviantart</p></i></a></div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <p> Jeff Fung | Yebinabox &copy; 2018 </p>
+      </footer>
+
+    </main>
+  </body>
+</html>
+<!-- Jeff Fung | Yebinabox -->
