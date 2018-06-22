@@ -20,6 +20,7 @@ body{
 .pages{
   padding: 1rem;
   max-width: 100%;
+  min-height: 92vh;
 }
 
 h1{
@@ -47,8 +48,9 @@ img{
 }
 
 main{
-  padding: 0 2rem;
-  margin-left: 150px;
+  padding: 0 2rem 0 12rem;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .header{
@@ -210,7 +212,7 @@ ul li a{
 
 .a-box{
   display: flex;
-  min-height: 800px;
+  min-height: 1000px;
   height: 90vh;
   align-items: center;
 }
@@ -224,7 +226,7 @@ ul li a{
 }
 
 #a-picture-inner{
-  padding: 0 1rem 0 10vw;
+  padding: 0 2rem 0 4rem;
   width: 100%;
 }
 
@@ -243,7 +245,7 @@ ul li a{
   padding: 1rem 0 0 0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .a-box{
     flex-direction: column;
     flex-wrap: wrap;
@@ -305,7 +307,7 @@ ul li a{
 /* Contact Section */
 
 #contact{
-  min-height: 900px;
+  min-height: 92vh;
 }
 
 .contact-icons{
@@ -322,7 +324,7 @@ ul li a{
 }
 
 #email{
-  font-size:calc(1.25rem + 2vw);
+  font-size: 3rem;
   display: inline-block;
   text-align: center;
   text-decoration: underline;
@@ -366,6 +368,9 @@ ul li a{
   .social-media-icons{
      grid-template-columns: repeat(3, 1fr);
      padding: 5rem 2rem 0 2rem;
+  }
+  #email{
+    font-size: 2rem;
   }
 }
 
