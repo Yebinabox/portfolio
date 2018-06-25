@@ -17,10 +17,18 @@ body{
   background: #eee;
 }
 
+i:hover{
+  color: 	#00FFFF;
+}
+
+.n-l:hover{
+  text-decoration: underline;
+}
+
 .pages{
   padding: 1rem;
   max-width: 100%;
-  min-height: 92vh;
+  min-height: 900px;
 }
 
 h1{
@@ -210,10 +218,13 @@ ul li a{
 
 /* About Section */
 
+#about{
+  padding-bottom: 5rem;
+}
+
 .a-box{
   display: flex;
-  min-height: 1000px;
-  height: 90vh;
+  height: 800px;
   align-items: center;
 }
 
@@ -226,8 +237,14 @@ ul li a{
 }
 
 #a-picture-inner{
-  padding: 0 2rem 0 4rem;
+  padding: 0 2rem 0 2rem;
   width: 100%;
+}
+
+#myself{
+  max-height: 492.5px;
+  max-width: 492.5px;
+  float:right;
 }
 
 #a-text{
@@ -269,7 +286,17 @@ ul li a{
 
 }
 
+/* Design Section */
+
+#design{
+  padding-bottom: 5rem;
+}
+
 /* Gallery Section */
+
+#gallery{
+  padding-bottom: 5rem;
+}
 
 .gallery{
   -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
@@ -282,6 +309,10 @@ ul li a{
   -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
   page-break-inside: avoid; /* Firefox */
   break-inside: avoid; /* IE 10+ */
+}
+
+.gallery-image:hover{
+  opacity: 0.9;
 }
 
 @media (min-width: 450px) {
@@ -306,10 +337,6 @@ ul li a{
 
 /* Contact Section */
 
-#contact{
-  min-height: 92vh;
-}
-
 .contact-icons{
   font-size: 3rem;
   display: inline-block;
@@ -330,6 +357,10 @@ ul li a{
   text-decoration: underline;
   text-decoration-color: #00ffff;
   color: #000;
+}
+
+#e:hover{
+  color: 	#00FFFF;
 }
 
 .contact-text{
