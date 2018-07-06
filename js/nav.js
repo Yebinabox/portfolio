@@ -1,18 +1,14 @@
 //Jeff Fung | Yebinabox
 
-//click event
 $(function(){
   offset = 0;
   $('.main-nav li a[href^="#"]').click(function(event) {
 
-      //prevent from default action to intitiate
       event.preventDefault();
       $(this).addClass('active');
 
-      //the id of the section we want to go to
       var anchorId = $(this).attr('href');
 
-      //scroll target : the top position of the section that has the id referenced by href
       var target = $(anchorId).offset().top - offset;
 
       $('html, body').animate({ scrollTop: target }, 1000, function () {
@@ -23,30 +19,28 @@ $(function(){
   })
 
 
-  //check the pages when scroll event occurs
   $(window).scroll(function(){
-      //get the current vertical position of the scroll bar
+
       position = $(this).scrollTop();
       $('.main-nav li a[href^="#"]').each(function(){
             var anchorId = $(this).attr('href');
             var target = $(anchorId).offset().top - 75;
-          // check if the document has crossed the page
+
           if(position>=target){
-              //remove active from all anchor and add it to the clicked anchor
+
               $('.main-nav li a[href^="#"]').removeClass("active")
               $(this).addClass('active');
           }
       })
   });
   $(function(){
-      //set scroll state after dom ready
+
       $(window).scroll();
   });
 });
 
 $(function () {
 
-    //need to learn how to properly code this, will save some lines
     $("#drop-icon").click(function () {
         $('li > ul').not($(this).children("ul")).show();
         document.getElementById("slide-nav").style.background = "rgba(238, 238, 238, 0.9)";
@@ -65,7 +59,6 @@ $(function () {
     });
 });
 
-//click event
 $(function(){
   offset = 0;
   $('.slide-nav li a[href^="#"]').click(function(event) {
@@ -75,14 +68,11 @@ $(function(){
       document.getElementById("drop-icon").style.display = "block";
       document.getElementById("drop-icon2").style.display = "none";
 
-      //prevent from default action to intitiate
       event.preventDefault();
       $(this).addClass('active');
 
-      //the id of the section we want to go to
       var anchorId = $(this).attr('href');
 
-      //scroll target : the top position of the section that has the id referenced by href
       var target = $(anchorId).offset().top - offset;
 
       $('li > ul').not($(this).children("ul")).hide();
@@ -96,24 +86,22 @@ $(function(){
       return false;
   })
 
-
-  //check the pages when scroll event occurs
   $(window).scroll(function(){
-      //get the current vertical position of the scroll bar
+
       position = $(this).scrollTop();
       $('.slide-nav li a[href^="#"]').each(function(){
             var anchorId = $(this).attr('href');
             var target = $(anchorId).offset().top - 150;
-          //check if the document has crossed the page
+
           if(position>=target){
-              //remove active from all anchor and add it to the clicked anchor
+
               $('.slide-nav li a[href^="#"]').removeClass("active")
               $(this).addClass('active');
           }
       })
   });
   $(function(){
-      //set scroll state after dom ready
+
       $(window).scroll();
   });
 
@@ -121,7 +109,6 @@ $(function(){
   window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
 
-      //removes dropdown when scrolling if nav is not visible
       if (prevScrollpos >= currentScrollPos) {
         document.getElementById("slide-nav").style.top = "0";
       }

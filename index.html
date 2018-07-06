@@ -12,44 +12,46 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/hometext.js"></script>
+    <script src="./js/projects.js"></script>
     <script src="./js/lightbox.js"></script>
+    <link rel="icon" href="./images/favicon.png" />
     <title>Jeff Fung | Yebinabox</title>
   </head>
   <body>
 
-      <!-- Navigation -->
-      <div class="main-nav" id="main-nav">
-        <ul id="nav">
-          <li><a href="#home" class="n-l">Home</a></li>
-          <li><a href="#about" class="n-l">About</a></li>
-          <li><a href="#design" class="n-l">Design</a></li>
-          <li><a href="#gallery" class="n-l">gallery</a></li>
-          <!--  <li><a href="#miscellaneous">Miscellaneous</a></li> -->
-          <li><a href="#contact" class="n-l">Contact</a></li>
-        </ul>
-      </div>
+    <!-- Navigation -->
+    <div class="main-nav" id="main-nav">
+      <ul id="nav">
+        <li><a href="#home" class="n-l">Home</a></li>
+        <li><a href="#about" class="n-l">About</a></li>
+        <li><a href="#Projects" class="n-l">Projects</a></li>
+        <li><a href="#gallery" class="n-l">gallery</a></li>
+        <!--  <li><a href="#miscellaneous">Miscellaneous</a></li> -->
+        <li><a href="#contact" class="n-l">Contact</a></li>
+      </ul>
+    </div>
 
-      <!-- Dropdown Navigation -->
-      <div class="slide-nav" id="slide-nav">
-        <ul>
-          <li class="dropdown">
-            <a id="drop-icon">
-              <i class="fa fa-bars"></i>
-            </a>
-            <a id="drop-icon2">
-              <i class="fa fa-close"></i>
-            </a>
-            <ul class="nav2">
-              <li><a href="#home" class="n-l">Home</a></li>
-              <li><a href="#about" class="n-l">About</a></li>
-              <li><a href="#design" class="n-l">Design</a></li>
-              <li><a href="#gallery" class="n-l">Gallery</a></li>
-              <!-- <li><a href="#miscellaneous">Miscellaneous</a></li> -->
-              <li><a href="#contact" class="n-l">Contact</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+    <!-- Dropdown Navigation -->
+    <div class="slide-nav" id="slide-nav">
+      <ul>
+        <li class="dropdown">
+          <a id="drop-icon">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a id="drop-icon2">
+            <i class="fa fa-close"></i>
+          </a>
+          <ul class="nav2">
+            <li><a href="#home" class="n-l">Home</a></li>
+            <li><a href="#about" class="n-l">About</a></li>
+            <li><a href="#Projects" class="n-l">Projects</a></li>
+            <li><a href="#gallery" class="n-l">Gallery</a></li>
+            <!-- <li><a href="#miscellaneous">Miscellaneous</a></li> -->
+            <li><a href="#contact" class="n-l">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
     <!-- Content -->
     <main>
@@ -58,7 +60,7 @@
       <div id="home" class="pages">
         <div id="homepage">
           <img src="./images/logo1.png" id="logo"></img>
-          <p id="home-text">Hello, i'm Jeff and I create
+          <p id="home-text">Hello, i'm Jeff and this is my portfolio. I create
             <span class="home-text" data-period="2000" data-rotate='[ "Web Designs.", "Graphics.", "Art." ]'></span>
           </p>
         </div>
@@ -80,22 +82,43 @@
             <div id="a-text-inner">
               <h2 class="a-t-c">Hello! I'm Jeff, a Digital Designer from Vancouver, Canada.</h2>
               <h4 class="a-t-c">I love creating graphics, be it logos, backgrounds, art, or overlays.</h4>
-              <h4 class="a-t-c">As a graduate from BCIT in the Digital Design and Development program, I have a decent background in UX, UI, creating Graphics, and Web Design, as well as some knowledge in coding. My work starts with prototyping and finalizes as a complete design.</h4>
+              <h4 class="a-t-c">As a graduate from BCIT in the Digital Design and Development program, I have a decent background in Ui and UX design, Graphics design, front-end web development, and I also know a little about back-end development as well.</h4>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Design Page -->
-      <div id="design" class="pages">
+      <!-- Projects Page -->
+      <div id="Projects" class="pages">
         <div class="header">
-          <h1>Design</h1>
+          <h1>Projects</h1>
           <h3></h3>
         </div>
-        <img src="https://source.unsplash.com/1600x900/?nature,trees" alt="">
-        <div class="caption">
-          <h2> Project One </h2>
-          <h4>This line was intentionally left blank. You are currently reading some filler text. We aren't quite sure what to put here yet.</h4>
+        <div class="p-box">
+          <div id="p-1">
+            <img src="https://source.unsplash.com/1600x900/?nature,aniimals" alt="" class="p-imgs">
+            <h2>Project 1</h2>
+            <button class="accordion">View Details</button>
+            <div class="panel">
+              <img src="https://source.unsplash.com/1600x900/?nature,aniimals" alt="" class="p-img-1">
+              <div class="Purpose">
+                <h2>Purpose</h2>
+                <h4>Some websites use something called Lorem Ipsum to fill in paragraphs that do not have their content finalized. This is just dummy text that is essentially a placeholder so you can see what your final typefaces will look like. Once the website is complete this will read something different and more relevant to the website.</h4>
+              </div>
+
+              <img src="https://source.unsplash.com/1600x900/?nature,aniimals" alt="" class="p-img-2">
+              <div class="Decisions">
+                <h2>Decisions</h2>
+                <h4>Some websites use something called Lorem Ipsum to fill in paragraphs that do not have their content finalized. This is just dummy text that is essentially a placeholder so you can see what your final typefaces will look like. Once the website is complete this will read something different and more relevant to the website.</h4>
+              </div>
+
+              <img src="https://source.unsplash.com/1600x900/?nature,aniimals" alt="" class="p-img-3">
+              <div class="Details">
+                <h2>Details</h2>
+                <h4>Some websites use something called Lorem Ipsum to fill in paragraphs that do not have their content finalized. This is just dummy text that is essentially a placeholder so you can see what your final typefaces will look like. Once the website is complete this will read something different and more relevant to the website.</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
