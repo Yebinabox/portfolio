@@ -1,6 +1,6 @@
 //Jeff Fung | Yebinabox
 
-$(function(){
+$( document ).ready(function(){
   var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
