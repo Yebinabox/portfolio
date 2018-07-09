@@ -65,6 +65,8 @@ $(function(){
 
       $('li > ul').not($(this).children("ul")).hide();
       document.getElementById("slide-nav").style.background = "transparent";
+      document.getElementById("slide-nav").style.width = "auto";
+      document.getElementById("slide-nav").style.height = "auto";
       document.getElementById("drop-icon").style.display = "block";
       document.getElementById("drop-icon2").style.display = "none";
 
