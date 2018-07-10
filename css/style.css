@@ -43,10 +43,6 @@ h2{
   color: #000;
 }
 
-h3{
-  color: #888;
-}
-
 h4{
   color: #888;
 }
@@ -306,10 +302,10 @@ ul li a{
 
 .p-box{
   display: grid;
-  grid-row-gap: 1rem;
   align-items: center;
   justify-items: center;
   width: 100%;
+  padding-top: 10px;
 }
 
 .p-sections{
@@ -319,6 +315,7 @@ ul li a{
   align-items: center;
   grid-template-areas: "a b" "a c" "d d";
   grid-template-columns: 50% 50%;
+  margin-bottom: 1rem;
 }
 
 h2{
@@ -326,16 +323,34 @@ h2{
   align-self: end;
 }
 
+.p-links{
+  color: #888;
+  text-decoration: underline;
+}
+
+.p-links:hover{
+  color: 	#00FFFF;
+}
+
 .accordion {
-  color: #444;
   cursor: pointer;
-  border: none;
+  padding: 0.5rem 1rem;
+  color: #000;
+  font-weight: bold;
+  background-color: #eee;
+  border: 2px #ccc solid;
+  border-radius: 50px;
+  display:inline-block;
   text-align: center;
   align-self: start;
   outline: none;
   font-size: 15px;
   transition: 0.4s;
   grid-area: c;
+}
+
+.accordion.active{
+  background-color: #ccc;
 }
 
 .p-imgs{
@@ -347,7 +362,7 @@ h2{
 }
 
 .panel {
-  padding: 0 18px;
+  margin: 0 18px;
   display: none;
   overflow: hidden;
   grid-area: d;
@@ -372,10 +387,12 @@ h2{
 
 .d-3{
   grid-area: c;
+  align-self: start;
 }
 
 .d-4{
   grid-area: d;
+  align-self: start;
 }
 
 @media (max-width: 800px) {
