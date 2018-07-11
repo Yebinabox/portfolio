@@ -479,7 +479,7 @@ h2{
 #e:hover{
   color: 	#00FFFF;
 }
- 
+
 .contact-text{
   padding: 4rem 0 0 0;
   display: inline-block;
@@ -510,6 +510,7 @@ h2{
   text-decoration: underline;
   text-decoration-color: #00ffff;
 }
+
 @media (max-width: 1300px) {
   .social-media-icons{
      grid-template-columns: repeat(3, 1fr);
@@ -531,6 +532,8 @@ h2{
   #email{
     font-size: 1.8rem;
   }
+}
+
 @media (max-width: 325px) {
   #email{
     font-size: 1.4rem;
@@ -540,10 +543,10 @@ h2{
 /* Footer */
 
 footer{
+  clear: both;
   font-size: 1rem;
   text-align: left;
-  padding: 1rem 1rem;
-  margin: auto;
+  padding: 1rem;
 }
 
 /* Jeff Fung | Yebinabox */
