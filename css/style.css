@@ -433,10 +433,6 @@ h2{
   column-gap: 10px;
 }
 
-#g-grid{
-
-}
-
 .cards{
   -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
   page-break-inside: avoid; /* Firefox */
