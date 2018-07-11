@@ -434,7 +434,7 @@ h2{
   opacity: 0.9;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 350px) {
   .gallery{
      column-count: 2;
   }
