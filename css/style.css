@@ -434,7 +434,7 @@ h2{
   opacity: 0.9;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 375px) {
   .gallery{
      column-count: 2;
   }
@@ -529,6 +529,10 @@ h2{
      grid-template-columns: repeat(2, 1fr);
      padding: 5rem 0 0 0;
   }
+  #email{
+    font-size: 1.8rem;
+  }
+@media (max-width: 365px) {
   #email{
     font-size: 1.4rem;
   }
