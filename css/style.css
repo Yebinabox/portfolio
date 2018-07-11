@@ -50,7 +50,7 @@ h4{
 img{
   display: block;
   width: 100%;
-  min-width: 150px;
+  min-width: 100px;
 }
 
 main{
@@ -434,7 +434,7 @@ h2{
   opacity: 0.9;
 }
 
-@media (min-width: 350px) {
+@media (min-width: 300px) {
   .gallery{
      column-count: 2;
   }
@@ -532,7 +532,7 @@ h2{
   #email{
     font-size: 1.8rem;
   }
-@media (max-width: 365px) {
+@media (max-width: 325px) {
   #email{
     font-size: 1.4rem;
   }
