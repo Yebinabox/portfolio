@@ -311,11 +311,12 @@ ul li a{
 .p-sections{
   display: grid;
   grid-row-gap: 0.5rem;
+  width: 100%;
   justify-items: center;
   align-items: center;
   grid-template-areas: "a b" "a c" "d d";
   grid-template-columns: 50% 50%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 h2{
@@ -362,7 +363,6 @@ h2{
 }
 
 .panel {
-  margin: 0 18px;
   display: none;
   overflow: hidden;
   grid-area: d;
@@ -375,6 +375,10 @@ h2{
   grid-template-areas: "a b" "c d";
   grid-template-columns: 50% 50%;
   align-items: center;
+}
+
+.link-text{
+  padding-top: 8px;
 }
 
 .d-1{
@@ -447,8 +451,6 @@ h2{
      column-count: 4;
   }
 }
-
-/* Miscellaneous Section */
 
 /* Contact Section */
 
