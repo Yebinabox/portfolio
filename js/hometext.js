@@ -1,4 +1,4 @@
-//Jeff Fung | Yebinabox 
+//plugin by: Gregory Schier
 
 $(function(){
   var TxtRotate = function(el, toRotate, period) {
@@ -56,5 +56,3 @@ $(function(){
   css.innerHTML = ".home-text > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 });
-
-//Jeff Fung | Yebinabox
